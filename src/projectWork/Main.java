@@ -18,6 +18,20 @@ public class Main {
 
 		
 		System.out.println(listaImpiegati.toString());
+		
+		//test funzione aggiorna dao
+		Impiegato impiegatoModifica = new Impiegato("nome", "cognome", "CodiceFiscale2", 222222);
+		
+		listaImpiegati.aggiorna(impiegatoModifica);
+		
+		System.out.println(listaImpiegati.toString());
+		
+		//test funzione elimina
+		Impiegato i = listaImpiegati.ricercaPerCodiceFicale("CodiceFiscale6");
+		
+		listaImpiegati.elimina(i);
+		
+		System.out.println(listaImpiegati.toString());
 	}
 
 }

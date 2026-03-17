@@ -24,7 +24,9 @@ public class ImpiegatoDao {
 	
 	public boolean aggiorna(Impiegato impiegato) {
 		for(Impiegato i : listaImpiegati) {
-			if(i.getCodiceFiscale().equalsIgnoreCase(i.getCodiceFiscale())) {
+			if(i.getCodiceFiscale().equalsIgnoreCase(impiegato.getCodiceFiscale())) {
+				i.setNome(impiegato.getNome());
+				i.setCognome(impiegato.getCognome());
 				return true;
 			}
 		}
@@ -34,7 +36,8 @@ public class ImpiegatoDao {
 	
 	public boolean elimina(Impiegato impiegato) {
 		for(Impiegato i : listaImpiegati) {
-			if(i.getCodiceFiscale().equalsIgnoreCase(i.getCodiceFiscale())) {
+			if(i.getCodiceFiscale().equalsIgnoreCase(impiegato.getCodiceFiscale())) {
+				listaImpiegati.remove(impiegato);
 				return true;
 			}
 		}
