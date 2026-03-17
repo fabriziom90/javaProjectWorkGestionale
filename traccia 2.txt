@@ -1,0 +1,21 @@
+dentro package model, creare le seguenti classi:
+
+Ruolo, con i campi idRuolo, descrizione, e i relativi get/set
+
+Storico, con i campi idStorico, matricola, idRuolo, DataInizio, DataFine
+
+dentro package dao, creare le seguenti classi:
+
+- RuoloDao, con  attributi e  metodi simili a ImpiegatoDao, quindi
+
+un arrayList di Ruolo, e i metodi per aggiungere, aggiornare, eliminare e 
+
+ricercare un ruolo tramite idRuolo (identifica in modo univoco il ruolo).
+
+- StoricoDao, con  attributi e  metodi simili a ImpiegatoDao, quindi
+
+un arrayList di Storico, e i metodi per aggiungere, aggiornare, eliminare e 
+
+ricercare uno storico tramite idStorico (identifica in modo univoco lo storico).
+
+Dentro ogni classe, creare un main per testarla.

@@ -1,0 +1,46 @@
+Creare un dynamic project web chiamato Gestionale.
+
+Creare un package chiamato model
+
+Creare una classe chiamata Impiegato, con i campi nome, cognome, codicefiscale, 
+
+matricola (intero), con i relativi metodi per valorizzarli e leggerli (get/set)
+
+Creare un package chiamato dao
+
+Creare una classe chiamata ImpiegatoDao
+
+Nella classe ImpiegatoDao, aggiungere un arrayList di tipo Impiegato, chiamato
+
+listaImpiegato.
+
+Nelle classe ImpiegatoDao, aggiungere i seguenti metodi:
+
+- ricercaPerCodiceFiscale, prende in ingresso un codice fiscale  cerca 
+
+un impiegato, dentro listaImpiegato, con quel codice. Ritornare l'impiegato
+
+cercato, altrimenti null.
+
+- inserisci, prende in ingresso un'istanza i di Impiegato e l'aggiunge in 
+
+listaImpiegato.
+
+- aggiorna,  prende in ingresso un'istanza i di Impiegato, la cerca, tramite
+
+codice fiscale in listaImpiegato, e se la trova aggiorna il contenuto con l'istanza
+
+i. Ritornare vero, se l'istanza è stata trovata.
+
+- elimina, prende in ingresso un codice fiscale e cerca, dentro listaImpiegato,
+
+ un impiegato con quel codice fiscale. Se lo trova lo elimina. Ritorna vero se
+
+ ha trovato un impiegato con quel codice.
+
+ 
+
+ 
+
+ creare un main per testare il nostro progetto
+
